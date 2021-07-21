@@ -4,19 +4,19 @@ import logo from './images/logo.svg';
 function Nav() {
     return (
         <header className="navbar">
-            <img src={logo} />
             <nav className="nav">
                 <ul>
-                    <li>멋쟁이 제작자</li>
-                    <li>먹방 & 레시피</li>
-                    <li>건강한 이야기</li>
+                    <img src={logo} />
+                    <li><a href="#">멋쟁이 제작자</a></li>
+                    <li><a href="#">먹방 & 레시피</a></li>
+                    <li><a href="#">건강한 이야기</a></li>
                 </ul>
-                <input type="text" placeholder="Search" />
-                <div>
-                    <a href="#">로그인</a>
-                    <a href="#">회원가입</a>
-                </div>
             </nav>
+            <div className="nav_right">
+                <input type="text" placeholder="Search" />
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
         </header>
     );
 }
