@@ -1,0 +1,77 @@
+/* css start */
+/* root */
+
+$m-left: 30px;
+$m-right: 30px;
+$l-height: 30px;
+
+/* NavBar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.navbar a {
+    color: #adb5bd;
+    text-decoration: none;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 2px;
+        top: 23px;
+        left: 0;
+        background: #f76707;
+        transition: all 0.2s ease-in-out;
+        transition-duration: 0.3s;
+        opacity: 0;
+    }
+    &:hover{
+        color: #212529
+    }
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+
+.navbar ul{
+    display: inline-flex;
+    line-height: $l-height;
+}
+
+.nav_left li {
+    margin-left: $m-left;
+}
+
+.nav_right li {
+    margin-right: $m-right;
+}
+
+.nav_right input {
+    border: none;
+    width: 45px;
+    &::-webkit-input-placeholder {
+        color: #adb5bd;
+    }
+    &:focus {
+        outline: none;
+        border-bottom: 2px solid #f76707;;
+        width: 100px;
+        transition: all 0.2s ease-out;
+        transition-duration: 0.3s;
+        &::-webkit-input-placeholder {
+            color: #868e96;
+        }
+    }
+}
+
+.search_icon {
+    color: #adb5bd;
+    position: relative;
+    top: 3px;
+}
