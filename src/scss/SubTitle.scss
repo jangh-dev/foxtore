@@ -1,0 +1,19 @@
+h2 a {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    color: #868e96;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 50px 0 50px;
+    
+    &:hover {
+        color: #212529;
+    }
+}
+
+h2 a p {
+    align-self: flex-end;
+    font-size: 0.875rem;
+    margin-left: 5px;
+}

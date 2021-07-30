@@ -1,14 +1,16 @@
 .mainVideo {
     position: sticky;
     padding-top: 56.25%;
-    margin-bottom: 70px;
+    margin-bottom: 200px;
     &::after {
         content: "";
-        display: flex;
-        justify-content: center;
-        width: 150px;
-        height: 2px;
-        background: red;
+        width: 300px;
+        height: 3px;
+        background: #f76707;
+        position: absolute;
+        left: 50%;
+        margin-top: 100px;
+        transform: translate(-50%, -50%);
     }
 }
 
